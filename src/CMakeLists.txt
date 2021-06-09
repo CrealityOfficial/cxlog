@@ -1,0 +1,11 @@
+__files_group(${CMAKE_CURRENT_SOURCE_DIR}/src SRC)
+
+set(LIBS spdlog)
+set(DEFS _CRT_SECURE_NO_WARNINGS NOMINMAX)
+
+__add_real_target(cxlog lib SOURCE ${SRC} LIB ${LIBS} DEF ${DEFS})
+set_property(TARGET cxlog PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${CMAKE_CURRENT_SOURCE_DIR}/src)
+
+
+
+

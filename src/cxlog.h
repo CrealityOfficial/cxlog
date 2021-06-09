@@ -35,7 +35,7 @@ namespace cxlog
 
 		void SetLevel(int level = 0);
 
-		auto GetLogger()
+		std::shared_ptr<spdlog::logger> GetLogger()
 		{
 			return mp_logger_;
 		}

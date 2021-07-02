@@ -10,7 +10,7 @@ namespace spdlog
 namespace cxlog
 {
 
-#define MAX_LOG_LEN 128
+#define MAX_LOG_LEN 512
 #define CXLogInfo(...)  cxlog::CXLog::Instance().info(__VA_ARGS__)
 #define CXLogDebug(...)  cxlog::CXLog::Instance().debug(__VA_ARGS__)
 #define CXLogWarn(...) cxlog::CXLog::Instance().warn(__VA_ARGS__)
